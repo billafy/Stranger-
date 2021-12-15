@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DhoondLe</title>
+    <link rel="stylesheet" href="d.css">
+
+</head>
+
+<body>
+    <div class="dhoondle">
+        <div class="header">
+            <ul>
+                <li><a href="">Dmail</a></li>
+                <li><a href="">Photos</a></li>
+                <li><button>Log In</button></li>
+            </ul>
+        </div>
+        <div class="content">
+            <img src="https://lh3.googleusercontent.com/PoY9BO1yd6pKsayPxUVfNTeq1ydFiZ7GFZKKceu9icYAifWNrf7SjUAvSQp9OIvwchsD8YY=s170"
+                alt="">
+            <div class="searchBox">
+                <input type="search" class="explore" value="">
+               
+            </div>
+            <div class="extra">
+                <button class="exploreBtn">DhoondLe Explore </button>
+               
+            </div>
+            <div class="languages">
+                
+                <ul>
+                   <li> DhoondLe offered in:</li> 
+                    <li><a href="">हिन्दी </a></li>
+                    <li><a href=""> ಕನ್ನಡ </a></li>
+                    <li><a href=""> मराठी </a></li>
+                    <li><a href=""> ગુજરાતી </a></li>
+                    <li><a href=""> తెలుగు </a></li>
+                    <li><a href=""> தமிழ் </a></li>
+                    <li><a href=""> മലയാളം</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <div class=" sec1">
+                <p class="country">India</p>
+               
+            </div>
+            <div class="sec2">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Settings</a></li>
+            </ul>
+
+            
+            </div>
+            <p class="creator">Made by Vish</p>
+        </div>
+    </div>
+    <script>
+        let explore = document.querySelector('.explore');
+        let exploreBtn = document.querySelector('.exploreBtn');
+
+        exploreBtn.onclick = function()
+        {
+            let url ='https://www.google.co.in/search?q='+explore.value;
+            window.open(url,'_self');
+        }
+
+    </script>
+</body>
+
+</html>
